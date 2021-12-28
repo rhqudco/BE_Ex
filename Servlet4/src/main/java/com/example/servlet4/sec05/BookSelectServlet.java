@@ -1,8 +1,5 @@
 package com.example.servlet4.sec05;
 
-import com.example.servlet4.sec04.MemberDAO;
-import com.example.servlet4.sec04.MemberVO;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;

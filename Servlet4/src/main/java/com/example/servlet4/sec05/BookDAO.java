@@ -1,7 +1,5 @@
 package com.example.servlet4.sec05;
 
-import com.example.servlet4.sec04.MemberVO;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
