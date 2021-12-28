@@ -13,6 +13,7 @@
 
                 if(id.value == "" || pw.value == ""){
                     alert("아이디와 비밀번호는 필수입니다.");
+                    return false;
                 }else {
                     frmLogin.method = "post";
                     frmLogin.action = "login3";
