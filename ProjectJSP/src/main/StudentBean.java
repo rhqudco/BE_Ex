@@ -7,6 +7,14 @@ public class StudentBean {
     private String stdAddress;
     private String stdYear;
 
+    public StudentBean(String stdNo, String stdName, String stdPhone, String stdAddress, String stdYear) {
+        this.stdNo = stdNo;
+        this.stdName = stdName;
+        this.stdPhone = stdPhone;
+        this.stdAddress = stdAddress;
+        this.stdYear = stdYear;
+    }
+
     public String getStdNo() { return stdNo; }
     public void setStdNo(String stdNo) {
         this.stdNo = stdNo;
