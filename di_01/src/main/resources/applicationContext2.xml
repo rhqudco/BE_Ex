@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="nameService" class="com.di.spring_di_xml_setter.NameService" />
+    <bean id="nameController" class="com.di.spring_di_xml_setter.NameController">
+        <!-- Setter 기반 의존성 주입 : name(setter 메소드 이름 : setNameService()), ref(의존성있는 빈) -->
+        <property name="nameService" ref="nameService" />
+    </bean>
+
+    <bean id="speaker" class="com.di.spring_di_xml_setter_ex1.Speaker" />
+    <bean id="tv" class="com.di.spring_di_xml_setter_ex1.Tv">
+        <!-- Setter 기반 의존성 주입 : name(setter 메소드 이름 : setNameService()), ref(의존성있는 빈) -->
+        <property name="speaker" ref="speaker" />
+    </bean>
+
+    <bean id="bmi" class="com.di.spring_di_xml_constructor_value.BMI"/>
+    <bean id="member" class="com.di.spring_di_xml_constructor_value.Member">
+        <!-- 생성자 기반 의존성 주입 -->
+        <constructor-arg ref="bmi"/>
+        <!-- 매개변수 있는 생성자 사용하므로 값 설정 -->
+        <constructor-arg value="홍길동" />
+        <constructor-arg value="24" />
+        <constructor-arg value="177" />
+        <constructor-arg value="59" />
+        <constructor-arg><!-- ArrayList 값 설정-->
+            <list>
+                <value>수영</value>
+                <value>헬스</value>
+                <value>에어로빅</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>

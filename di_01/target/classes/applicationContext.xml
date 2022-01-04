@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="nameService" class="com.di.spring_di_xml_constructor.NameService"/>
+    <bean id="nameController" class="com.di.spring_di_xml_constructor.NameController">
+        <!-- 생성자 기반 의존성 주입 : nameService 참조-->
+        <constructor-arg ref="nameService"/>
+    </bean>
+
+    <bean id="speaker" class="com.di.spring_di_xml_constructor_ex1.Speaker"/>
+    <bean id="tv" class="com.di.spring_di_xml_constructor_ex1.Tv">
+        <!-- 생성자 기반 의존성 주입 : nameService 참조-->
+        <constructor-arg ref="speaker"/>
+    </bean>
+
+</beans>
