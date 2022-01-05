@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="bmi" class="com.di.spring_di_xml_setter_value.BMI"/>
+    <bean id="member" class="com.di.spring_di_xml_setter_value.Member">
+        <!--  Setter 기반 의존성 주입  -->
+        <property name="bmi" ref="bmi" />
+        <!--    Setter 메소드 사용하여 값 설정    -->
+        <property name="name" value="이몽룡" />
+        <property name="age" value="25" />
+        <property name="height" value="177" />
+        <property name="weight" value="59" />
+        <property name="courses">
+            <list>
+                <value>테니스</value>
+                <value>수영</value>
+                <value>에어로빅</value>
+            </list>
+        </property>
+    </bean>
+    <!-- Annotation을 사용하기 위한 태그 추가 -->
+    <context:annotation-config />
+    <!-- 빈 생성 -->
+    <bean id="bnameService" class="com.di.spring_di_annotation.BNameService" />
+    <bean id="anotherNameService" class="com.di.spring_di_annotation.AnotherNameService" />
+    <bean id="nameService" class="com.di.spring_di_annotation.NameService" />
+    <bean id="nameController" class="com.di.spring_di_annotation.NameController" />
+    <!-- 빈만 설정하고 DI 설정 하지 않았음  -->
+</beans>
