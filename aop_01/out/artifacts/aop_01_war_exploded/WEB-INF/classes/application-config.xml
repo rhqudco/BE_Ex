@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="performanceAspect" class="com.aop.spring_aop_xml.PerformanceAspect" />
+
+    <aop:config>
+        <aop:aspect id="performanceAspect" ref="performanceAspect">
+            <!-- where : com.aop.spring_aop_xml 패키지 내 모든 메소드에 적용 -->
+            <aop:pointcut id="timeElapse" expression="within(com.aop.spring_aop_xml.*)"/>
+            <!-- when : 전 / 후, what : trace() 메소드 -->
+            <aop:around method="trace" pointcut-ref="timeElapse" />
+        </aop:aspect>
+    </aop:config>
+    <bean id="rect" class="com.aop.spring_aop_xml.Rect" >
+        <property name="width" value="10" />
+        <property name="height" value="20" />
+    </bean>
+    <bean id="gugudan" class="com.aop.spring_aop_xml.Gugudan" >
+        <property name="dan" value="7" />
+    </bean>
+</beans>

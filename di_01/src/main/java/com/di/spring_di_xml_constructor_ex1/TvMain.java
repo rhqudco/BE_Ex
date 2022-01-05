@@ -5,7 +5,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class TvMain {
     public static void main(String[] args) {
-        AbstractApplicationContext context = new GenericXmlApplicationContext("applicationContext.xml");
+        AbstractApplicationContext context = new GenericXmlApplicationContext("WEB-INF/applicationContext.xml");
         Tv tv = context.getBean("tv", Tv.class);
         tv.Up();
         tv.Down();
