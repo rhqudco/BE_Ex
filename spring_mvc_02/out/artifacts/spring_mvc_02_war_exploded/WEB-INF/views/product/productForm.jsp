@@ -9,7 +9,7 @@
 	<body>
 		<h3>상풍 등록</h3>
 		
-		<form method="post" action="/product/newProduct">
+		<form method="post" action="/product/newProduct3">
 			상품 번호 : <input type="text" name="prdNo"><br>
 			상품명 : <input type="text" name="prdName"><br>
 			가격 : <input type="text" name="prdPrice"><br>

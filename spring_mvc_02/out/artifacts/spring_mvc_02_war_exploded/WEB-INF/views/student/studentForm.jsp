@@ -13,7 +13,7 @@
 				학번 : <input type="text" name="no"><br>
 				성명 : <input type="text" name="name"><br>
 				학년 : <input type="text" name="year"><br>			
-				<input type="submit"value="등록"> <input type="reset"value="취소">
+				<input type="submit" value="등록"> <input type="reset" value="취소">
 			</form>
 	</body>
 </html>

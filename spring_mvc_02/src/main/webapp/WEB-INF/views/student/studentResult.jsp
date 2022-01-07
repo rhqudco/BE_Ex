@@ -10,6 +10,10 @@
 			<h3>학생 정보 등록 결과</h3>
 			학번 : ${no } <br>
 			성명 : ${name } <br>
-			학년 : ${year } 
+			학년 : ${year }
+
+	<br><br>
+	url을 통한 데이터 전송 <br>
+	<a href="/student/studentModify/${no}" > ${no}</a>
 	</body>
 </html>
