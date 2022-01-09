@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.2.19.RELEASE</version>
+            <version>5.3.14</version>
         </dependency>
 
         <dependency>
@@ -52,6 +52,19 @@
             <artifactId>lombok</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
         </dependency>
 
     </dependencies>

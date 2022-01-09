@@ -24,7 +24,8 @@ public class ProductController {
     @RequestMapping("/product/listAllProduct")
     public String listAllProduct(Model model) {
         ArrayList<ProductVo> prdList = service.listAllProduct();
-        model.addAttribute("PrdList", prdList);
+        model.addAttribute("prdList", prdList);
+        System.out.println(prdList);
         return "product/productListView";
     }
     // 상품 등록폼으로 이동
