@@ -13,17 +13,12 @@ import java.sql.DriverManager;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "file:src/main/webapp/WEB-INF/spring/**/root-context.xml" })
 public class MySQLTest {
-
     @Inject
     private DataSource ds;
-
     @Test
     public void testConnection() throws Exception {
-
         try (Connection con = ds.getConnection()) {
-
             System.out.println("\n >>>>>>>>>> Connection 출력 : " + con + "\n");
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,14 +1,12 @@
 package dbtest;
 
-import com.spring_mvc.mybatis.model.ProductVo;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 
 import javax.inject.Inject;
 import java.util.ArrayList;

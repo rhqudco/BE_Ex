@@ -25,14 +25,14 @@ public class ProductService implements IProductService{
     }
     @Override
     public void updateProduct(ProductVo productVo) {
-
+        dao.updateProduct(productVo);
     }
     @Override
     public void deleteProduct(String prdNo) {
-
+        dao.deleteProduct(prdNo);
     }
     @Override
     public ProductVo detailViewProduct(String prdNo) {
-        return null;
+        return dao.detailViewProduct(prdNo);
     }
 }
