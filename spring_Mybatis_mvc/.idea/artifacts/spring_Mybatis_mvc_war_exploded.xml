@@ -24,6 +24,10 @@
           <element id="library" level="project" name="mysql-connector-java-8.0.27" />
           <element id="library" level="project" name="jstl" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.22" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.1" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
         </element>
       </element>
     </root>

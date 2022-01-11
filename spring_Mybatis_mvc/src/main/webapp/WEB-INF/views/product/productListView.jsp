@@ -19,7 +19,7 @@
     </c:forEach>
 </table><br>
 
-<a href="<c:url value='/' />">메인 화면으로 이동</a> <!-- 같은 표현 -->
+<a href="<c:url value='/' />">메인 화면으로 이동</a>
 
 </body>
 </html>
