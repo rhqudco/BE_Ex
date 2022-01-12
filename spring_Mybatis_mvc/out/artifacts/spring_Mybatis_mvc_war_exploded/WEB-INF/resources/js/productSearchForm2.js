@@ -2,7 +2,6 @@
  * productSearch.js
  상품 검색
  */
-
 $(document).ready(function(){
     $('#prdSearchFrm2').on('submit', function(){
         event.preventDefault();
@@ -24,4 +23,3 @@ $(document).ready(function(){
         });
     });
 });
-

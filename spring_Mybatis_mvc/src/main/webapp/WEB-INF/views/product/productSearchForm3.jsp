@@ -4,7 +4,7 @@
     <head>
         <title>상품 검색</title>
       <script src="<c:url value='/js/jquery-3.6.0.min.js/' />"></script>
-      <script src="<c:url value='/js/productSearchForm.js/' />"></script>
+      <script src="<c:url value='/js/productSearchForm3.js/' />"></script>
     </head>
     <body>
       <h3>상품 검색</h3>

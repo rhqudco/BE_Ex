@@ -12,7 +12,7 @@ $(document).ready(function(){
 
         $.ajax({
             type:"post",
-            url:"productSearch",
+            url:"productSearch3", // @RestController로 요청
             data:formData,
             success:function(result){   // 컨트롤러에서 반환한 prdList를 result가 받음
                 //alert(result.length);

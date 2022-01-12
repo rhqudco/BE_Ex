@@ -10,6 +10,7 @@
       <a href="product/newProductForm">상품 등록</a><br><br>
       <a href="product/productSearchForm">상품 검색</a><br><br>
       <a href="product/productSearchForm2">상품 검색2</a><br><br>
+      <a href="product/productSearchForm3">상품 검색3(RestController)</a><br><br>
       <h3>ajax 연습</h3><br>
       <a href="logForm">로그인</a><br>
       <a href="logForm2">로그인2</a>
